@@ -1,6 +1,6 @@
 public class KalkulatorApp {
     public static void main(String[] args) {
-        String działanie = InputManager.getOperation();
+        String dzialanie = InputManager.getOperation();
         OperationValidator.validate(działanie); //todo obsługa wyjatku
 
         String liczba1 = InputManager.getNumber(); //todo obsługa wyjatku
@@ -9,6 +9,6 @@ public class KalkulatorApp {
         String liczba2 = InputManager.getNumber(); //todo obsługa wyjatku
         NumberValidator.validate(liczba2);
 
-//        System.out.println(Operations.giveAnswer()); //todo obsługa wyjatku... czy napewno?
+  System.out.println(Operations.giveAnswer(dzialanie,liczba1,liczba2)); //todo obsługa wyjatku... czy napewno?
     }
 }

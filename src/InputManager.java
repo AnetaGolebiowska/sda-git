@@ -7,18 +7,19 @@ public class InputManager {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj znak działania: *,+,-,/");
         String dzialanie = scanner.next();
-        throw new NoSuchMethodError();
+        if (dzialanie == null) {
+            throw new NoSuchMethodError();
+        } else return dzialanie;
     }
 
     public static String getNumber() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj 2 liczby. Podaj 1 liczbe:");
-        String liczba1 = scanner.next();
-        System.out.println("Podaj 2 liczbe");
-        String liczba2 = scanner.next();
+        System.out.println("Podaj liczbe:");
+        String liczba = scanner.next();
 
-        throw new NoSuchMethodError();
+        if (liczba == null) {
+            throw new NoSuchMethodError();
+        } else return liczba;
     }
 }
-
 //comment
