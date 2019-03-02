@@ -9,6 +9,6 @@ public class KalkulatorApp {
         String liczba2 = InputManager.getNumber(); //todo obsługa wyjatku
         NumberValidator.validate(liczba2);
 
-        System.out.println(Operations.giveAnswer()); //todo obsługa wyjatku... czy napewno?
+//        System.out.println(Operations.giveAnswer()); //todo obsługa wyjatku... czy napewno?
     }
 }
