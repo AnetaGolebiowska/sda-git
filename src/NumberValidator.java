@@ -9,5 +9,8 @@ public class NumberValidator
         if (Character.isDigit(ch));
         else{
         throw new NoSuchMethodError();}
+
     }
+
 }
+//comment
