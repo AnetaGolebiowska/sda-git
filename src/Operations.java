@@ -1,5 +1,5 @@
 public class Operations {
-    public static int giveAnswer(String działanie, int liczba1, int liczba2) {
+    public static int giveAnswer(String działanie, int liczba1, int liczba2) throws UnsupportedOperationException {
         char znak = działanie.charAt(0);
 
         if (znak == '+') {
