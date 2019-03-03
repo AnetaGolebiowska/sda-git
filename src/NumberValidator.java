@@ -1,12 +1,16 @@
 
-public class NumberValidator {
-    public static void validate(String liczba1) throws IllegalArgumentException {
-        int liczba = Integer.parseInt(liczba1);
-        if (liczba != 0){
-            }
-        else {
-            throw new IllegalArgumentException("To nie jest liczba");
-        }
+public class NumberValidator
+
+{
+    public static void validate(String liczba1) throws NoSuchMethodError
+
+    {
+        liczba1.trim();
+       for(char ch: liczba1.toCharArray() )
+       { if (Character.isDigit(ch));
+        else{
+        throw new NoSuchMethodError();}}
+
 
     }
 

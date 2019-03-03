@@ -1,10 +1,8 @@
 public class OperationValidator {
-    public static void validate(String działanie) throws IllegalArgumentException {
+    public static void validate(String dzialanie) throws UnsupportedOperationException {
 
-      if (działanie.trim().length() > 1 &&
-              !działanie.trim().matches("/[+-/*]/g"))
-          throw new IllegalArgumentException(
-                  "To nie jest znak działania matematycznego"
-          );
+      if (dzialanie.trim().length() >= 1 &&
+              !dzialanie.trim().matches("[+-/*]"))
+          throw new UnsupportedOperationException();
     }
 }
